@@ -1,0 +1,30 @@
+JUnit version 4.13.2
+.E.E.E
+Time: 0.032
+There were 3 failures:
+1) testMergeRightEnd(TestListExamples)
+java.lang.AssertionError: expected:<[a, a, b, c, d]> but was:<[a, b, c, d]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:20)
+2) testMergeLeftEnd(TestListExamples)
+java.lang.AssertionError: expected:<[a, a, b, c, d]> but was:<[a, b, c, d]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testMergeLeftEnd(TestListExamples.java:29)
+3) testFilter(TestListExamples)
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at TestListExamples.testFilter(TestListExamples.java:37)
+
+FAILURES!!!
+Tests run: 3,  Failures: 3
+
